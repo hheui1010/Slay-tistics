@@ -17,7 +17,7 @@ Our solution provides **Absolute Clinical Transparency**:
 ## ⚙️ Methodology & Reproducibility
 To ensure absolute reproducibility, our entire data pipeline is documented and open-sourced. 
 
-### 1. Signal Processing
+### 1. Signal Processing (`src/preprocess.py`)
 * Decoded raw `.dat` and `.hea` files using the `wfdb` library.
 * Applied a 3rd-order Butterworth bandpass filter (0.5–45 Hz) to eliminate baseline wander and high-frequency muscle noise **without distorting the critical QRS complex**.
 
@@ -33,5 +33,10 @@ Strategically retained all 18 features for our final **L2 Regularized Logistic R
 * **F1-Score:** 0.6316
 * **Recall:** 0.8000
 
-## ⚖️ License
-This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+## 🚀 Quick Start & Installation
+
+**1. Clone the repository & install dependencies:**
+```bash
+git clone [https://github.com/hheui1010/Brugada-Syndrome-Detection.git](https://github.com/hheui1010/Brugada-Syndrome-Detection.git)
+cd Brugada-Syndrome-Detection
+pip install -r requirements.txt
